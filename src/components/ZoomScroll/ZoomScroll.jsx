@@ -75,7 +75,6 @@ const ZoomSection = ({ image, title, text }) => {
                         src={image}
                         alt={title}
                         className="w-full h-full"
-                        loading="lazy"
                     />
                 </motion.figure>
 

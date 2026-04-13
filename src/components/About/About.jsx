@@ -15,7 +15,6 @@ const About = () => {
                     src={assets.BlueEllipse}
                     alt="Blue layer"
                     className="w-full h-full object-cover"
-                    loading="lazy"
                 />
             </figure>
             <figure className="w-[70%] absolute top-[-25%] left-[-35%] opacity-50 pointer-events-none">
@@ -23,7 +22,6 @@ const About = () => {
                     src={assets.RedCircle}
                     alt="Red circle"
                     className="w-full h-full object-cover"
-                    loading="lazy"
                 />
             </figure>
             <figure className="w-[70%] absolute top-[-25%] right-[-35%] opacity-50 pointer-events-none">
@@ -31,7 +29,6 @@ const About = () => {
                     src={assets.RedCircle}
                     alt="Red circle"
                     className="w-full h-full object-cover"
-                    loading="lazy"
                 />
             </figure>
 

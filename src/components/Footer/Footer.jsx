@@ -64,7 +64,6 @@ const Footer = () => {
                             src={assets.RightTop}
                             alt="Right Top"
                             className="w-5 h-5"
-                            loading="lazy"
                         />
                     </a>
                 </div>

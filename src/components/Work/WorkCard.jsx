@@ -19,7 +19,6 @@ const WorkCard = ({ id, title, image, url }) => {
                     src={assets.RightTop}
                     alt="Right Top"
                     className="w-5 h-5"
-                    loading="lazy"
                 />
             </a>
             <div className="flex flex-col justify-between h-full">
@@ -33,7 +32,6 @@ const WorkCard = ({ id, title, image, url }) => {
                         src={image}
                         alt={title}
                         className="w-full h-full object-cover"
-                        loading="lazy"
                     />
                 </figure>
             </div>

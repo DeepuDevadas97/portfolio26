@@ -29,7 +29,7 @@ const Navbar = () => {
 
     return (
         <div
-            className={`navbar sticky top-0 w-full py-2.5 sm:py-3 md:py-4 transition-all duration-300 backdrop-blur-xl 
+            className={`navbar sticky top-0 w-full py-2.5 sm:py-3 md:py-4 transition-all duration-300 
       ${isScrolled ? "bg-black/70" : "bg-black/30"}`}
         >
             <div className="container">

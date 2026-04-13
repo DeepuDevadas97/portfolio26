@@ -76,7 +76,6 @@ const Banner = () => {
                         src={assets.Ellipse}
                         alt="Ellipse"
                         className="w-full h-full relative z-10"
-                        loading="lazy"
                     />
                 </motion.figure>
 
@@ -95,7 +94,6 @@ const Banner = () => {
                         src={assets.MyImage}
                         alt="My Photo"
                         className="w-full h-full"
-                        loading="lazy"
                     />
                 </motion.figure>
             </div>

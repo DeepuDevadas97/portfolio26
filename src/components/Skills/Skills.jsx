@@ -90,7 +90,7 @@ const Skills = () => {
                         using modern JavaScript frameworks, I ensure every
                         detail is intentional.
                     </p>
-                    <img src={assets.DrawLine} alt="drawline" className="mt-2 max-w-[140px] md:max-w-[200px]" loading="lazy"/>
+                    <img src={assets.DrawLine} alt="drawline" className="mt-2 max-w-[140px] md:max-w-[200px]"/>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 gap-y-3 sm:gap-y-8 lg:gap-y-20 mt-15 sm:mt-25">
                     {SkillsData.map((skill, key) => {
