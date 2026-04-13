@@ -15,7 +15,7 @@ html {
 }
 @media (max-width: 1279.98px) {
     .container {
-        max-width: 900px;
+        max-width:900px;
     }
 }
 
