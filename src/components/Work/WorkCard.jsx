@@ -31,7 +31,7 @@ const WorkCard = ({ id, title, image, url }) => {
                     <img
                         src={image}
                         alt={title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                     />
                 </figure>
             </div>
