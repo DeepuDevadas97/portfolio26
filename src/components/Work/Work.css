@@ -1,0 +1,32 @@
+.work-card {
+    width: 100%;
+    aspect-ratio: 1 / 0.9;
+
+}
+.work-img {
+    aspect-ratio: 1 / 0.61;
+}
+.work-img img {
+    transition: 0.9s;
+}
+.card-header::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.15;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.work-link:hover img{
+    filter: invert(1);
+}
+@media(min-width: 880px) and (max-width: 1023.98px) {
+    .work-link {
+        width: 64px;
+        height: 64px;
+    }
+}
+

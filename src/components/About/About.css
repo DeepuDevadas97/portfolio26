@@ -1,0 +1,29 @@
+.overview {
+    background-image: linear-gradient(
+        to right,
+        #ffffff06,
+        #ffffff1f,
+        #ffffff06
+    );
+}
+.about-text::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 80px;
+    display: block;
+    background-image: url("../../assets/images/draw-line.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 640px) {
+    .about-text::after {
+        width: 200px;
+        height: 60px;
+        bottom: -70px;
+    }
+}

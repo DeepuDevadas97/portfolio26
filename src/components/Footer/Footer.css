@@ -1,0 +1,6 @@
+.footer-nav ul li a {
+    transition: 0.3s;
+}
+.footer-nav ul li a:hover {
+    filter: brightness(200%);
+}

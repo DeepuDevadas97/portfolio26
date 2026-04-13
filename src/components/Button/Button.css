@@ -1,0 +1,20 @@
+.btn-styles {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.download-btn {
+    background-image: linear-gradient(to right, #9747ff, #fe814c);
+}
+.outline-btn {
+    border: 1px solid #fff;
+    background-color: transparent
+}
+.fill-btn {
+    background-color: #9747FF;
+}

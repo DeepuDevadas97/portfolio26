@@ -1,0 +1,104 @@
+.banner {
+    background-image: url("../../assets/images/Background2.png");
+    height: 100vh;
+    background-size: 150%;
+    background-position: 5% 5%;
+    background-repeat: no-repeat;
+    animation: bgMove 7s linear infinite;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 5% 5%;
+    }
+    25% {
+        background-position: -5% 10%;
+    }
+    50% {
+        background-position: -10% 0%;
+    }
+    100% {
+        background-position: 5% 5%;
+    }
+}
+.banner-gradient {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000db, #00000000);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.ellipse {
+    position: absolute;
+    bottom: -34%;
+}
+@media (max-height: 700px) {
+    .ellipse {
+        max-width: 440px;
+    }
+}
+@keyframes EllipseMove {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.banner-image {
+    position: absolute;
+    bottom: 0;
+}
+.hello-span {
+    box-shadow: 0 6px 70px #ff757552;
+}
+
+@media (min-height: 1020px) {
+    .ellipse {
+        max-width: 600px;
+    }
+    .banner-image {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .banner h1 {
+        font-size: 68px;
+        line-height: 78px;
+        max-width: 1030px;
+    }
+    .hello-span {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner {
+        background-size: cover;
+        background-position: 25% 5%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner {
+        background-position: 35% 5%;
+    }
+}
+
+.ellipse {
+    position: absolute;
+    bottom: -34%;
+    overflow: hidden;
+}
+
+.ellipse-gradient {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+}
