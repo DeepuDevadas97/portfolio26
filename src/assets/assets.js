@@ -1,5 +1,4 @@
 import Logo from "./images/Logo";
-import BannerImg from "./images/Background.png";
 import Ellipse from "./images/Ellipse.png";
 import MyImage from "./images/Myphoto.png";
 import BlueEllipse from "./images/blue-ellipse.svg";
@@ -8,7 +7,6 @@ import GroupLayer from "./images/group-layer.svg";
 import DrawLine from "./images/draw-line.png";
 import Bird from "./images/bird.png";
 import Gear from "./images/gear.png";
-import Prism from "./images/prism.png";
 import Airplane from "./images/airplane.png";
 import CardBg from "./images/card-bg.png";
 import RightTop from "./icons/right-top.svg";
@@ -23,7 +21,6 @@ import EdgeProp  from "./images/Edge-prop.png";
 
 const assets = {
     Logo,
-    BannerImg,
     Ellipse,
     MyImage,
     BlueEllipse,
@@ -32,7 +29,6 @@ const assets = {
     DrawLine,
     Bird,
     Gear,
-    Prism,
     Airplane,
     CardBg,
     RightTop,
