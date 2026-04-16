@@ -6,6 +6,10 @@
     border-radius: 30px;
     font-size: 18px;
     color: #fff;
+    transition: 0.3s;
+}
+.btn-styles:hover {
+    filter: brightness(120%);
 }
 
 .download-btn {

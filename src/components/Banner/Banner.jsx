@@ -44,7 +44,9 @@ const Banner = () => {
                     </h1>
 
                     <div className="xl:hidden mt-10 sm:mt-15">
-                        <Button title="Download CV" variant="download" />
+                        <a href="/Deepu-Resume-Frontend.pdf" download>
+                            <Button title="Download CV" variant="download" />
+                        </a>
                     </div>
                 </motion.div>
             </div>

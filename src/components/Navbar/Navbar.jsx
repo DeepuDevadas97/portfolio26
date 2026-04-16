@@ -27,6 +27,15 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    // const handleDownload = () => {
+    //     const link = document.createElement("a");
+    //     link.href = "/resume.pdf";
+    //     link.download = "Deepu-Devadas-Resume.pdf";
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // };
+
     return (
         <div
             className={`navbar sticky top-0 w-full py-2.5 sm:py-3 md:py-4 transition-all duration-300 
@@ -82,22 +91,40 @@ const Navbar = () => {
                             </button>
                         </div>
                         <ul className="text-white text-[18px] md:text-[16px] lg:text-[18px] font-normal flex items-center gap-x-3">
-                            <li className="px-2" onClick={() => setIsOpen(!isOpen)}>
+                            <li
+                                className="px-2"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
                                 <a href="#">Home</a>
                             </li>
-                            <li className="px-2" onClick={() => setIsOpen(!isOpen)}>
+                            <li
+                                className="px-2"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
                                 <a href="#about">About</a>
                             </li>
-                            <li className="px-2" onClick={() => setIsOpen(!isOpen)}>
+                            <li
+                                className="px-2"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
                                 <a href="#services">Services</a>
                             </li>
-                            <li className="px-2" onClick={() => setIsOpen(!isOpen)}>
+                            <li
+                                className="px-2"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
                                 <a href="#skills">Skills</a>
                             </li>
-                            <li className="px-2" onClick={() => setIsOpen(!isOpen)}>
+                            <li
+                                className="px-2"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
                                 <a href="#work">My Works</a>
                             </li>
-                            <li className="px-2" onClick={() => setIsOpen(!isOpen)}>
+                            <li
+                                className="px-2"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
                                 <a href="#contact">Contact</a>
                             </li>
                         </ul>
@@ -128,7 +155,9 @@ const Navbar = () => {
                     </button>
 
                     <div className="max-xl:hidden">
-                        <Button title="Download CV" variant="download" />
+                        <a href="/Deepu-Resume-Frontend.pdf" download>
+                            <Button title="Download CV" variant="download" />
+                        </a>
                     </div>
                 </div>
             </div>
