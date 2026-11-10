@@ -155,7 +155,7 @@ const Navbar = () => {
                     </button>
 
                     <div className="max-xl:hidden">
-                        <a href="/Deepu-Resume-Frontend.pdf" download>
+                        <a href="/Deepu-Frontend-Dev.pdf" download>
                             <Button title="Download CV" variant="download" />
                         </a>
                     </div>
