@@ -78,6 +78,8 @@ const Banner = () => {
                         src={assets.Ellipse}
                         alt="Ellipse"
                         className="w-full h-full relative z-10"
+                        fetchPriority="high"
+                        decoding="async"
                     />
                 </motion.figure>
 
@@ -96,6 +98,8 @@ const Banner = () => {
                         src={assets.MyImage}
                         alt="My Photo"
                         className="w-full h-full"
+                        fetchPriority="high"
+                        decoding="async"
                     />
                 </motion.figure>
             </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "./ZoomScroll.css";
 import assets from "../../assets/assets";
@@ -24,45 +24,17 @@ const sections = [
 const ZoomSection = ({ image, title, text }) => {
     const ref = useRef(null);
     
-    const [isDesktop, setIsDesktop] = useState(false);
-
-    useEffect(() => {
-        const checkScreen = () => {
-            setIsDesktop(window.innerWidth >= 1024);
-        };
-
-        checkScreen();
-        window.addEventListener("resize", checkScreen);
-
-        return () => window.removeEventListener("resize", checkScreen);
-    }, []);
-
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["start end", "end start"],
     });
 
-    const scale = useTransform(
-        scrollYProgress,
-        [0, 0.5, 1],
-        [0, 1, 1.5]
-    );
+    const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.94, 1, 0.98]);
 
     const opacity = useTransform(
         scrollYProgress,
         [0, 0.5, 1],
         [0, 1, 0]
-    );
-
-    const blurValue = useTransform(
-        scrollYProgress,
-        [0, 0.45, 0.55, 1],
-        [10, 0, 0, 10]
-    );
-
-    const blur = useTransform(
-        blurValue,
-        (value) => `blur(${value}px)`
     );
 
     const x = useTransform(
@@ -84,7 +56,6 @@ const ZoomSection = ({ image, title, text }) => {
                 style={{
                     scale,
                     opacity,
-                    filter: isDesktop ? blur : "none",
                 }}
             >
                 <motion.figure
@@ -98,6 +69,8 @@ const ZoomSection = ({ image, title, text }) => {
                         src={image}
                         alt={title}
                         className="w-full h-full"
+                        loading="lazy"
+                        decoding="async"
                     />
                 </motion.figure>
 

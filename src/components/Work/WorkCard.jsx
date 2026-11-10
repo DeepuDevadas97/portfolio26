@@ -2,13 +2,16 @@ import React from "react";
 import "./Work.css";
 import assets from "../../assets/assets";
 
-const WorkCard = ({ id, title, image, url }) => {
+const WorkCard = ({ title, image, url, priority = false }) => {
     return (
         <div className="work-card w-full rounded-[40px] relative px-5 pt-6 sm:pt-9 pb-5 z-50 max-sm:max-w-[320px] max-sm:mx-auto">
             <img
                 src={assets.CardBg}
-                alt="Card Layer"
+                alt=""
+                aria-hidden="true"
                 className="w-full h-full object-cover absolute left-0 top-0"
+                loading={priority ? "eager" : "lazy"}
+                decoding="async"
             />
             <a
                 href={url}
@@ -32,6 +35,9 @@ const WorkCard = ({ id, title, image, url }) => {
                         src={image}
                         alt={title}
                         className="w-full h-full object-cover object-top"
+                        loading={priority ? "eager" : "lazy"}
+                        decoding="async"
+                        fetchPriority={priority ? "high" : "auto"}
                     />
                 </figure>
             </div>

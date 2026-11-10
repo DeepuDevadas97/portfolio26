@@ -4,22 +4,6 @@
     background-size: 150%;
     background-position: 5% 5%;
     background-repeat: no-repeat;
-    animation: bgMove 7s linear infinite;
-}
-
-@keyframes bgMove {
-    0% {
-        background-position: 5% 5%;
-    }
-    25% {
-        background-position: -5% 10%;
-    }
-    50% {
-        background-position: -10% 0%;
-    }
-    100% {
-        background-position: 5% 5%;
-    }
 }
 .banner-gradient {
     width: 100%;

@@ -1,7 +1,6 @@
 import React from "react";
 import assets from "../../assets/assets";
 import "./Work.css";
-import { title } from "framer-motion/client";
 import WorkCard from "./WorkCard";
 
 const workData = [
@@ -72,6 +71,9 @@ const Work = () => {
                     src={assets.BlueEllipse}
                     alt="Blue layer"
                     className="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="async"
+                    aria-hidden="true"
                 />
             </figure>
             <figure className="w-[65%] absolute top-[30%] left-[-30%] opacity-50 pointer-events-none">
@@ -79,6 +81,9 @@ const Work = () => {
                     src={assets.RedCircle}
                     alt="Red circle"
                     className="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="async"
+                    aria-hidden="true"
                 />
             </figure>
             <figure className="w-[65%] absolute top-[30%] right-[-30%] opacity-50 pointer-events-none">
@@ -86,6 +91,9 @@ const Work = () => {
                     src={assets.RedCircle}
                     alt="Red circle"
                     className="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="async"
+                    aria-hidden="true"
                 />
             </figure>
             <div className="container">
@@ -100,7 +108,10 @@ const Work = () => {
                     </p>
                     <img
                         src={assets.DrawLine}
-                        alt="drawline"
+                        alt=""
+                        aria-hidden="true"
+                        loading="eager"
+                        decoding="async"
                         className="mt-2 max-w-[140px] md:max-w-[200px] mx-auto mb-10 md:mb-15"
                     />
                     <div className="w-full bg-white/3 rounded-[40px] sm:rounded-[60px] relative overflow-hidden p-4 sm:p-6 md:p-8 py-8 sm:py-10 max-sm:max-w-[400px] max-sm:mx-auto">
@@ -112,6 +123,7 @@ const Work = () => {
                                         title={work.title}
                                         image={work.image}
                                         url={work.url}
+                                        priority={index < 3}
                                         key={index}
                                     />
                                 );
